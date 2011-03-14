@@ -1,0 +1,13 @@
+#Query 106: Rabbit
+PREFIX dbp-ont: <http://dbpedia.org/ontology/>
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX dbpprop: <http://dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+Select distinct ?rabbits
+Where {
+ ?rabbits rdfs:label ?label .
+ ?rabbits rdf:type dbpedia:Rabbit . 
+FILTER(LANG(?label) = "en")
+}
