@@ -1,0 +1,7 @@
+This is code to compare SPARQL query results to each other. The results that
+have a low similarity to the rest of the set will be discarded as outliers. The
+goal is to clean up noisy result sets.
+
+We use 16 queries with enumerations (types of curry, tupes of kangaroos, etc).
+These have been graded by a human, so they are our gold standard. The queries
+are run against factForge.
